@@ -85,5 +85,7 @@ def prepare(miniurl_xstavka):
         cursor.executemany("INSERT INTO xstavka VALUES (?,?,?,?,?,?,?,?,?,?)", game)
         conn.commit()
 
-prepare(miniurl_xstavka)
-driver.close()
+
+if __name__ == "__main__":
+    prepare(miniurl_xstavka)
+    driver.close()

@@ -80,4 +80,6 @@ def prepare():
     cursor.executemany("INSERT INTO liga VALUES (?,?,?,?,?,?,?)", game)
     conn.commit()
 
-prepare()
+
+if __name__ == "__main__":
+    prepare()

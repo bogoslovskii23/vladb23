@@ -77,5 +77,7 @@ def prepare():
     cursor.executemany("INSERT INTO pari VALUES (?,?,?,?,?,?,?)", game)
     conn.commit()
 
-prepare()
-driver.close()
+
+if __name__ == "__main__":
+    prepare()
+    driver.close()
